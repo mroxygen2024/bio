@@ -1,0 +1,255 @@
+:root {
+  --bg: #f6f3ea;
+  --ink: #1c1a17;
+  --panel: #fffdf7;
+  --brand: #174a5b;
+  --brand-soft: #d6eaf0;
+  --accent: #d76a35;
+  --border: #ded7c7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Verdana", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 10%, #fff9ea 0%, transparent 45%),
+    radial-gradient(circle at 90% 20%, #eef7ff 0%, transparent 40%),
+    linear-gradient(180deg, #f8f6ef 0%, #f1ecdf 100%);
+  line-height: 1.6;
+}
+
+.hero {
+  padding: 20px clamp(16px, 4vw, 44px) 34px;
+  background: linear-gradient(130deg, #174a5b 0%, #226b84 55%, #2e879d 100%);
+  color: #fff;
+}
+
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.top-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  padding: 7px 13px;
+}
+
+.top-nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hero-content {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 26px;
+  align-items: center;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 4px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+}
+
+.intro-tag {
+  margin: 0;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+h1 {
+  margin: 4px 0 10px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin: 0 0 18px;
+  max-width: 52ch;
+}
+
+.cta {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+main {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: clamp(16px, 3vw, 28px);
+  margin-bottom: 18px;
+  box-shadow: 0 8px 16px rgba(28, 26, 23, 0.06);
+}
+
+.marquee-panel {
+  background: var(--brand-soft);
+  border-color: #b7d6df;
+  padding: 12px;
+}
+
+marquee {
+  font-weight: 700;
+  color: #0f3b4a;
+  margin: 2px 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  border-left: 6px solid var(--accent);
+  padding-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background: #f0ebe0;
+}
+
+tbody tr:nth-child(even) {
+  background: #faf8f2;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+.field-row {
+  display: grid;
+  gap: 6px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #b8b09f;
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: #fff;
+}
+
+fieldset {
+  border: 1px solid #cfc6b3;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 6px;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  background: var(--brand);
+  color: #fff;
+}
+
+button.secondary {
+  background: #6b6a67;
+}
+
+footer {
+  text-align: center;
+  padding: 18px 12px 26px;
+  color: #4a463d;
+}
+
+footer a {
+  color: #11485a;
+}
+
+@media (max-width: 760px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 170px;
+    height: 170px;
+  }
+
+  h2 {
+    border-left: none;
+    border-bottom: 4px solid var(--accent);
+    padding-left: 0;
+    padding-bottom: 6px;
+  }
+}

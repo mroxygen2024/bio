@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Personal Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="top-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero-content">
+      <img src="profile.svg" alt="Profile illustration" class="profile-image">
+      <div>
+        <p class="intro-tag">Hello, I am</p>
+        <h1>Fuad</h1>
+        <p class="subtitle">A curious builder who enjoys code, design, and learning every day.</p>
+        <a href="#contact" class="cta">Work With Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel marquee-panel">
+      <marquee behavior="scroll" direction="left" scrollamount="6">Welcome to my personal webpage. I love creating useful things with clean code and thoughtful design.</marquee>
+      <marquee behavior="alternate" direction="right" scrollamount="4">Currently learning: frontend design, accessibility, and better developer workflows.</marquee>
+    </section>
+
+    <section class="panel" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am passionate about technology and enjoy turning ideas into practical projects. My interests include
+        web development, user experience, and writing maintainable code.
+      </p>
+      <p>
+        Outside coding, I like reading, exploring new tools, and sharing what I learn with others.
+      </p>
+    </section>
+
+    <section class="panel" id="skills">
+      <h2>Skills Table</h2>
+      <table>
+        <caption>My Core Skills</caption>
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+            <th>Years</th>
+            <th>Favorite Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML & CSS</td>
+            <td>Advanced</td>
+            <td>4</td>
+            <td>Responsive web pages</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Intermediate</td>
+            <td>3</td>
+            <td>Interactive interfaces</td>
+          </tr>
+          <tr>
+            <td>Git & GitHub</td>
+            <td>Intermediate</td>
+            <td>3</td>
+            <td>Team collaboration</td>
+          </tr>
+          <tr>
+            <td>UI Design</td>
+            <td>Intermediate</td>
+            <td>2</td>
+            <td>Clean user experiences</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel" id="projects">
+      <h2>Projects Table</h2>
+      <table>
+        <caption>Recent Projects</caption>
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Portfolio Website</td>
+            <td>Frontend</td>
+            <td>Completed</td>
+            <td>Designer + Developer</td>
+          </tr>
+          <tr>
+            <td>Task Tracker</td>
+            <td>Web App</td>
+            <td>In Progress</td>
+            <td>Frontend Developer</td>
+          </tr>
+          <tr>
+            <td>Learning Blog</td>
+            <td>Content Platform</td>
+            <td>Planned</td>
+            <td>Writer + Editor</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel" id="schedule">
+      <h2>Weekly Availability</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Morning</th>
+            <th>Afternoon</th>
+            <th>Evening</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Learning</td>
+            <td>Project Work</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Client Work</td>
+            <td>Meetings</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Research</td>
+            <td>Development</td>
+            <td>Community</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel" id="contact">
+      <h2>Contact Form</h2>
+      <form>
+        <div class="field-row">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="field-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="field-row">
+          <label for="reason">Reason for Contact</label>
+          <select id="reason" name="reason" required>
+            <option value="" selected disabled>Select one</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="freelance">Freelance Project</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>Preferred Contact Method</legend>
+          <label><input type="radio" name="method" value="email" checked> Email</label>
+          <label><input type="radio" name="method" value="phone"> Phone</label>
+          <label><input type="radio" name="method" value="chat"> Chat</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Topics</legend>
+          <label><input type="checkbox" name="topic" value="web"> Web Development</label>
+          <label><input type="checkbox" name="topic" value="design"> UI Design</label>
+          <label><input type="checkbox" name="topic" value="mentoring"> Mentoring</label>
+        </fieldset>
+
+        <div class="field-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+        </div>
+
+        <div class="button-row">
+          <button type="submit">Send Message</button>
+          <button type="reset" class="secondary">Clear</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with HTML and CSS only | <a href="#top">Back to top</a></p>
+  </footer>
+</body>
+</html>
