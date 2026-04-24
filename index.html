@@ -1,215 +1,410 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me | ASTU Life</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="hero" id="top">
-    <nav class="top-nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#schedule">Schedule</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <meta name="description"
+    content="Fuad Sano portfolio: Software Engineering and AI projects, skills, and contact information.">
+  <title>Fuad Sano | Software & AI Engineering Portfolio</title>
 
-    <div class="hero-content">
-      <img src="profile.jpg" alt="Profile illustration" class="profile-image">
-      <div>
-        <p class="intro-tag">Hello, I am</p>
-        <h1>Fuad Sano</h1>
-        <p class="subtitle">A Software Engineering student at Adama Science and Technology University focused on campus life, learning, and growth.</p>
-        <a href="#contact" class="cta">Connect With Me</a>
-      </div>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/styles/main.css">
+
+  <!-- Scripts -->
+  <script src="assets/scripts/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="header">
+    <div class="container site-header__inner">
+      <a href="#top" class="brand" aria-label="Go to homepage">
+        <div class="brand__icon">
+          <i class="ph ph-code"></i>
+        </div>
+        <span class="brand__name">Fuad Sano</span>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false"
+        aria-controls="siteNav">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+      </button>
+
+      <!-- Navigation -->
+      <nav class="site-nav" id="siteNav" aria-label="Primary Navigation">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="#about">About</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#skills">Skills</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#projects">Projects</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="site-nav__actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+            <i class="ph ph-moon theme-toggle__icon-dark"></i>
+            <i class="ph ph-sun theme-toggle__icon-light"></i>
+          </button>
+        </div>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section class="panel marquee-panel">
-      <marquee behavior="scroll" direction="left" scrollamount="6">Welcome to my student profile. I am proud to study Software Engineering at Adama Science and Technology University.</marquee>
-      <marquee behavior="alternate" direction="right" scrollamount="4">Campus life: classes, group study, library sessions, student clubs, and personal growth.</marquee>
-    </section>
-
-    <section class="panel" id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a Software Engineering student at Adama Science and Technology University. My main focus is
-        academic progress, teamwork, and building strong problem-solving skills.
-      </p>
-      <p>
-        I enjoy attending lectures, participating in student activities, spending time at the library,
-        and learning from classmates and mentors.
-      </p>
-      <p>
-        From the courses I am attending now, I love the Web-Based Engineering course the most.
-      </p>
-    </section>
-
-    <section class="panel" id="skills">
-      <h2>Student Strengths</h2>
-      <table>
-        <caption>My Academic and Personal Strengths</caption>
-        <thead>
-          <tr>
-            <th>Strength</th>
-            <th>Level</th>
-            <th>Experience</th>
-            <th>How I Use It</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Teamwork</td>
-            <td>Advanced</td>
-            <td>3 years</td>
-            <td>Group assignments and class projects</td>
-          </tr>
-          <tr>
-            <td>Time Management</td>
-            <td>Intermediate</td>
-            <td>2 years</td>
-            <td>Balancing classes, study, and campus events</td>
-          </tr>
-          <tr>
-            <td>Communication</td>
-            <td>Intermediate</td>
-            <td>3 years</td>
-            <td>Presentations and peer discussions</td>
-          </tr>
-          <tr>
-            <td>Self-Learning</td>
-            <td>Intermediate</td>
-            <td>Ongoing</td>
-            <td>Library study and online resources</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="panel" id="projects">
-      <h2>Student Activities</h2>
-      <table>
-        <caption>Recent Campus and Academic Activities</caption>
-        <thead>
-          <tr>
-            <th>Activity</th>
-            <th>Category</th>
-            <th>Status</th>
-            <th>My Role</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>CSEC Club</td>
-            <td>EIC Club</td>
-            <td>Completed</td>
-            <td>Mentor for Students</td>
-          </tr>
-          <tr>
-            <td>Campus Volunteer Day</td>
-            <td>Community</td>
-            <td>In Progress</td>
-            <td>Volunteer</td>
-          </tr>
-          <tr>
-            <td>Semester Goal Planning</td>
-            <td>Personal Growth</td>
-            <td>Planned</td>
-            <td>Student Planner</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="panel" id="schedule">
-      <h2>Weekly Student Routine</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Day</th>
-            <th>Morning</th>
-            <th>Afternoon</th>
-            <th>Evening</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Monday</td>
-            <td>Lectures</td>
-            <td>Library Study</td>
-            <td>Club Activities</td>
-          </tr>
-          <tr>
-            <td>Wednesday</td>
-            <td>Lab Session</td>
-            <td>Group Discussion</td>
-            <td>Assignment Review</td>
-          </tr>
-          <tr>
-            <td>Friday</td>
-            <td>Quiz Preparation</td>
-            <td>Sports and Relaxation</td>
-            <td>Family Time</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="panel" id="contact">
-      <h2>Student Contact Form</h2>
-      <form>
-        <div class="field-row">
-          <label for="fullName">Full Name</label>
-          <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="top">
+      <div class="hero__bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="container hero__layout">
+        <div class="hero__copy reveal fade-up">
+          <div class="eyebrow">
+            <span class="eyebrow__dot"></span>
+            Software Engineer & AI
+          </div>
+          <h1 class="hero__title">
+            Architecting intelligent <span class="text-gradient">digital experiences</span> and software solutions.
+          </h1>
+          <p class="hero__text">
+            I build scalable software systems, integrate artificial intelligence, and transform complex ideas into
+            reliable digital experiences.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projects">
+              Explore Projects
+              <i class="ph ph-arrow-right"></i>
+            </a>
+            <a class="button button--secondary" href="#contact">
+              Let’s Collaborate
+            </a>
+          </div>
+          <div class="hero__meta">
+            <div class="meta-item">
+              <i class="ph ph-map-pin"></i> Based in ASTU
+            </div>
+            <div class="meta-item">
+              <i class="ph ph-users"></i> Team-focused builder
+            </div>
+          </div>
         </div>
 
-        <div class="field-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <div class="hero__visual reveal fade-left" aria-label="Profile summary">
+          <div class="profile-card">
+            <div class="profile-card__img-wrapper">
+              <img src="assets/images/profile.jpg" alt="Portrait of Fuad Sano" class="profile-card__image" width="360"
+                height="360" onerror="this.src='https://via.placeholder.com/360?text=FS'">
+            </div>
+            <div class="profile-card__info">
+              <h2 class="profile-card__name">Fuad Sano</h2>
+              <p class="profile-card__role">Software & AI Engineer</p>
+              <div class="profile-card__badge">ASTU</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <header class="section-header reveal fade-up">
+          <p class="section-eyebrow">About Me</p>
+          <h2 class="section-title">Focused on thoughtful products and steady growth.</h2>
+        </header>
+        <div class="grid-3 about__grid">
+          <article class="card reveal fade-up" style="transition-delay: 100ms;">
+            <div class="card__icon"><i class="ph ph-target"></i></div>
+            <h3 class="card__title">Current Focus</h3>
+            <p class="card__text">
+              I am currently deepening my software engineering and artificial intelligence fundamentals through
+              real-world projects and structured problem solving.
+            </p>
+          </article>
+          <article class="card reveal fade-up" style="transition-delay: 200ms;">
+            <div class="card__icon"><i class="ph ph-lightbulb"></i></div>
+            <h3 class="card__title">How I Work</h3>
+            <p class="card__text">
+              I prioritize clear communication, maintainable architecture, and iterative improvement while balancing
+              academic responsibilities.
+            </p>
+          </article>
+          <article class="card reveal fade-up" style="transition-delay: 300ms;">
+            <div class="card__icon"><i class="ph ph-heart"></i></div>
+            <h3 class="card__title">What I Enjoy</h3>
+            <p class="card__text">
+              Web-based engineering, study circles, and projects that positively impact student life and productivity.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills section--alt" id="skills">
+      <div class="container">
+        <div class="skills__layout">
+          <header class="section-header reveal fade-right">
+            <p class="section-eyebrow">Expertise</p>
+            <h2 class="section-title">Core strengths with practical application.</h2>
+            <p class="section-text">
+              A balanced mix of technical know-how and leadership skills that enable me to build effective teams and
+              ship quality projects.
+            </p>
+          </header>
+
+          <div class="skills__list" aria-label="Skills proficiency">
+            <div class="skill-bar reveal fade-left" style="transition-delay: 100ms;">
+              <div class="skill-bar__header">
+                <div class="skill-bar__info">
+                  <i class="ph ph-users-three skill-bar__icon"></i>
+                  <span class="skill-bar__name">Team Collaboration</span>
+                </div>
+                <span class="skill-bar__value">90%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="width: 90%;"></div>
+              </div>
+              <p class="skill-bar__desc">Leading and contributing to group assignments and handoffs.</p>
+            </div>
+
+            <div class="skill-bar reveal fade-left" style="transition-delay: 200ms;">
+              <div class="skill-bar__header">
+                <div class="skill-bar__info">
+                  <i class="ph ph-hourglass-high skill-bar__icon"></i>
+                  <span class="skill-bar__name">Time Management</span>
+                </div>
+                <span class="skill-bar__value">82%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="width: 82%;"></div>
+              </div>
+              <p class="skill-bar__desc">Balancing lectures, deep work sessions, and extracurriculars.</p>
+            </div>
+
+            <div class="skill-bar reveal fade-left" style="transition-delay: 300ms;">
+              <div class="skill-bar__header">
+                <div class="skill-bar__info">
+                  <i class="ph ph-brain skill-bar__icon"></i>
+                  <span class="skill-bar__name">Software & AI Development</span>
+                </div>
+                <span class="skill-bar__value">85%</span>
+              </div>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="width: 85%;"></div>
+              </div>
+              <p class="skill-bar__desc">Building scalable applications and intelligent data-driven solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <header class="section-header text-center reveal fade-up">
+          <p class="section-eyebrow">Projects</p>
+          <h2 class="section-title">Selected work and initiatives.</h2>
+        </header>
+
+        <!-- Dynamically populatable from backend API -->
+        <div class="grid-3 projects__grid" id="projectsContainer" data-api-resource="/api/projects">
+
+          <article class="project-card reveal fade-up" style="transition-delay: 100ms;">
+            <div class="project-card__image-wrap">
+              <img src="assets/images/mentorship.jpg" alt="CSEC Club Mentorship" class="project-card__img">
+              <div class="project-card__overlay">
+                <a href="#" class="button button--icon" aria-label="View Project"><i
+                    class="ph ph-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <span class="badge">Campus Community</span>
+              <h3 class="project-card__title">CSEC Club Mentorship</h3>
+              <p class="project-card__text">Mentored junior students on project setup, presentation preparation, and
+                study workflows.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal fade-up" style="transition-delay: 200ms;">
+            <div class="project-card__image-wrap">
+              <img src="assets/images/volunteer.jpg" alt="Campus Volunteer Day" class="project-card__img">
+              <div class="project-card__overlay">
+                <a href="#" class="button button--icon" aria-label="View Project"><i
+                    class="ph ph-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <span class="badge">Volunteer Work</span>
+              <h3 class="project-card__title">Campus Volunteer Day</h3>
+              <p class="project-card__text">Coordinated with peers to organize student support activities and improve
+                event execution.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal fade-up" style="transition-delay: 300ms;">
+            <div class="project-card__image-wrap">
+              <div class="project-card__overlay">
+                <a href="#" class="button button--icon" aria-label="View Project"><i
+                    class="ph ph-arrow-up-right"></i></a>
+              </div>
+              <div class="project-card__bg pattern-3"></div>
+            </div>
+            <div class="project-card__content">
+              <span class="badge">Planning</span>
+              <h3 class="project-card__title">Semester Goal System</h3>
+              <p class="project-card__text">Created a simple planning workflow for class milestones, revisions, and
+                personal growth goals.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact section--alt" id="contact">
+      <div class="container contact__layout">
+        <div class="contact__info reveal fade-right">
+          <header class="section-header">
+            <p class="section-eyebrow">Get In Touch</p>
+            <h2 class="section-title">Have an idea to build together?</h2>
+            <p class="section-text">
+              I'm always open to discussing web engineering work, study circles, or campus partnerships. Fill out the
+              form and I'll get back to you shortly.
+            </p>
+          </header>
+
+          <div class="contact__methods">
+            <a href="mailto:contacts.fuad@gmail.com" class="contact-method">
+              <div class="contact-method__icon"><i class="ph ph-envelope-simple"></i></div>
+              <div>
+                <h4 class="contact-method__title">Email Me</h4>
+                <p class="contact-method__detail">contacts.fuad@gmail.com</p>
+              </div>
+            </a>
+            <div class="contact-method">
+              <div class="contact-method__icon"><i class="ph ph-map-pin"></i></div>
+              <div>
+                <h4 class="contact-method__title">Location</h4>
+                <p class="contact-method__detail">Adama Science and Technology University</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="field-row">
-          <label for="reason">Reason for Message</label>
-          <select id="reason" name="reason" required>
-            <option value="" selected disabled>Select one</option>
-            <option value="classmate">Classmate Discussion</option>
-            <option value="student-club">Student Club Invite</option>
-            <option value="feedback">General Feedback</option>
-          </select>
+        <div class="contact__form-wrapper reveal fade-left">
+          <!-- The form is ready for a REST API connection via its data-api-endpoint attribute -->
+          <form class="form" id="contactForm" novalidate data-api-endpoint="/api/contact" data-method="POST">
+            <div class="form__group">
+              <label class="form__label" for="fullName">Full Name</label>
+              <div class="form__input-wrapper">
+                <i class="ph ph-user form__icon"></i>
+                <input class="form__input" id="fullName" name="fullName" type="text" placeholder="John Doe" required
+                  minlength="2">
+              </div>
+              <span class="form__error" aria-live="polite">Please enter your full name.</span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="email">Email Address</label>
+              <div class="form__input-wrapper">
+                <i class="ph ph-envelope-simple form__icon"></i>
+                <input class="form__input" id="email" name="email" type="email" placeholder="you@example.com" required>
+              </div>
+              <span class="form__error" aria-live="polite">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="subject">Subject</label>
+              <div class="form__input-wrapper">
+                <i class="ph ph-caret-down form__icon form__icon--right"></i>
+                <select class="form__input form__select" id="subject" name="subject" required>
+                  <option value="" disabled selected>Select a reason...</option>
+                  <option value="collaboration">Project Collaboration</option>
+                  <option value="mentorship">Mentorship</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+              <span class="form__error" aria-live="polite">Please select a subject.</span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="message">Message</label>
+              <textarea class="form__textarea" id="message" name="message" rows="4"
+                placeholder="Tell me about your project or question..." required minlength="10"></textarea>
+              <span class="form__error" aria-live="polite">Message must be at least 10 characters long.</span>
+            </div>
+
+            <button class="button button--primary button--full" type="submit" id="submitBtn">
+              <span class="submit-text">Send Message</span>
+              <i class="ph ph-paper-plane-right"></i>
+              <div class="spinner" style="display: none;"></div>
+            </button>
+
+            <!-- Success/Error Message Container -->
+            <div class="form__feedback" id="formFeedback" aria-live="polite" hidden></div>
+          </form>
         </div>
-
-        <fieldset>
-          <legend>Preferred Reply Method</legend>
-          <label><input type="radio" name="method" value="email" checked> Email</label>
-          <label><input type="radio" name="method" value="phone"> Phone</label>
-          <label><input type="radio" name="method" value="chat"> Chat</label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Topics</legend>
-          <label><input type="checkbox" name="topic" value="study"> Study Support</label>
-          <label><input type="checkbox" name="topic" value="campus"> Campus Activities</label>
-          <label><input type="checkbox" name="topic" value="advice"> Student Advice</label>
-        </fieldset>
-
-        <div class="field-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
-        </div>
-
-        <div class="button-row">
-          <button type="submit">Send Message</button>
-          <button type="reset" class="secondary">Clear</button>
-        </div>
-      </form>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>Software Engineering Student at Adama Science and Technology University | <a href="#top">Back to top</a></p>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__main">
+        <a href="#top" class="brand brand--footer">
+          <div class="brand__icon"><i class="ph ph-code"></i></div>
+          <span class="brand__name">Fuad Sano</span>
+        </a>
+        <p class="site-footer__text">
+          Software & AI Engineer mapping ideas into code. Scalable UI/UX built for future API integrations.
+        </p>
+      </div>
+
+      <div class="site-footer__links">
+        <div class="footer-col">
+          <h4 class="footer-col__title">Links</h4>
+          <ul class="footer-col__list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col__title">Social</h4>
+          <ul class="footer-col__list">
+            <li><a href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="site-footer__bottom">
+        <p>&copy; <span id="year"></span> Fuad Sano. All rights reserved.</p>
+        <a href="#top" class="back-to-top" aria-label="Back to top">
+          <i class="ph ph-arrow-up"></i>
+        </a>
+      </div>
+    </div>
   </footer>
 </body>
+
 </html>
