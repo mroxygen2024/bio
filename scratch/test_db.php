@@ -5,11 +5,12 @@ try {
     $db = getDB();
     $collections = $db->listCollections();
     echo "Connected to MongoDB successfully!\n";
-    echo "Collections in bio_db:\n";
+    echo "Using Database: " . ($_ENV['MONGODB_DB'] ?? 'bio_db') . "\n";
+    echo "Collections:\n";
     foreach ($collections as $collection) {
         echo "- " . $collection->getName() . "\n";
     }
 } catch (Exception $e) {
     echo "Connection failed: " . $e->getMessage() . "\n";
-    echo "Make sure MongoDB is running (e.g., docker-compose up -d)\n";
+    echo "Make sure MongoDB is running and .env is configured correctly.\n";
 }
