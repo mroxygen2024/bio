@@ -223,7 +223,7 @@
         </header>
 
         <!-- Dynamically populatable from backend API -->
-        <div class="grid-3 projects__grid" id="projectsContainer" data-api-resource="/api/projects">
+        <div class="grid-3 projects__grid" id="projectsContainer" data-api-resource="api/projects.php">
 
           <article class="project-card reveal fade-up" style="transition-delay: 100ms;">
             <div class="project-card__image-wrap">
@@ -310,7 +310,7 @@
 
         <div class="contact__form-wrapper reveal fade-left">
           <!-- The form is ready for a REST API connection via its data-api-endpoint attribute -->
-          <form class="form" id="contactForm" novalidate data-api-endpoint="/api/contact" data-method="POST">
+          <form class="form" id="contactForm" novalidate data-api-endpoint="api/contact.php" data-method="POST">
             <div class="form__group">
               <label class="form__label" for="fullName">Full Name</label>
               <div class="form__input-wrapper">
